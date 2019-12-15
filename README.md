@@ -70,3 +70,22 @@ If I don’t specify it otherwise, every task includes the following in order to
 * My work with reasoning behind my decisions are logged and can be reconstructed later if needed
 * All of the use cases are manually tested, and I made sure I didn’t break functionality which worked earlier
 * New features are demonstrated to the customer and are accepted by them
+
+## Work log
+
+### Plugin or own development
+
+When implementing a feature, it is always a decision to develop it myself, or use a plugin. Since this is a school project, it is good to code as much as I can to learn, but it's also good to learn how to make these decisions in real life to maximally satisfy the customer.
+
+Generally I considered these questions when making a decision:
+
+* *Development time* - in simple features it is possible to develop something faster than find and learn a plugin. But often it's faster (so cheaper) to use a plugin, which is very important in a complex project, where there are deadlines, and the customer is waiting for the product. Every case I tried to estimate the development time with coding and with plugins.
+* *Error proneness* - a new functionality is always a new opportunity to introduce bugs. Whatever I develop it needs thorough testing. In case of a good plugin I get functionality which is already tested by many other people, and supported for the future. But in case of a bad plugin, I can install all of it's bugs too. It's important to check the userbase, the rating and the reviews of a plugin, as well as the update frequencies.
+* *Security* - similarly to the previous point, a plugin can introduce security threaths, but can be also a safer solution than one I write myself. It also needs to be taken into consideration.
+* *Performance* - very similar considerations to the previous point.
+
+### Chosen plugins
+
+*
+
+## Security analysis
