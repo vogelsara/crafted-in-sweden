@@ -733,7 +733,21 @@ class pw_new_user_approve {
 	 * @param int $user_id
 	 */
 	public function add_user_status( $user_id ) {
-		$status = 'pending';
+
+		// Get the user object.
+		$user = get_userdata( $user_id );
+
+		// Get all the user roles as an array.
+		$user_roles = $user->roles;
+
+		// Check if the role you're interested in, is present in the array.
+		if ( in_array( 'subscriber', $user_roles, true ) ) {
+			// Do something.
+			$status = 'approved';
+		} else {
+			$status = 'pending';
+		}
+		
 
 		// This check needs to happen when a user is created in the admin
 		if ( isset( $_REQUEST['action'] ) && 'createuser' == $_REQUEST['action'] ) {
