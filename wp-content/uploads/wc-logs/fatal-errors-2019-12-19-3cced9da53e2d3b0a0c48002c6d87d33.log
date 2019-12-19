@@ -1,0 +1,8 @@
+2019-12-19T14:21:44+00:00 CRITICAL require_once(): Failed opening required 'includes/template.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\crafted-in-sweden\wp-content\plugins\new-user-approve\admin\templates\approve.php on line 2
+
+2019-12-19T14:22:55+00:00 CRITICAL require_once(): Failed opening required 'includes/template.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\crafted-in-sweden\wp-content\plugins\new-user-approve\admin\templates\approve.php on line 2
+
+2019-12-19T17:23:03+00:00 CRITICAL require_once(): Failed opening required 'includes/template.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\crafted-in-sweden\wp-content\plugins\new-user-approve\admin\templates\approve.php on line 2
+
+2019-12-19T17:23:22+00:00 CRITICAL require_once(): Failed opening required 'includes/template.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\crafted-in-sweden\wp-content\plugins\new-user-approve\admin\templates\approve.php on line 2
+

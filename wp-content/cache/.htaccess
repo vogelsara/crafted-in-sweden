@@ -1,0 +1,5 @@
+
+# BEGIN INDEX
+# Direktiven (raderna) mellan `BEGIN INDEX` och `END INDEX` genereras dynmiskt och bör endast ändras via WordPress-filter. Eventuella ändringar till direktiven mellan dessa markörer kommer att skrivas över.
+Options -Indexes
+# END INDEX
