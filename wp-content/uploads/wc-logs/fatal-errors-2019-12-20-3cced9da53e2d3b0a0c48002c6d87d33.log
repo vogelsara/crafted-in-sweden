@@ -1,0 +1,17 @@
+2019-12-20T20:30:50+00:00 CRITICAL require_once(): Failed opening required 'includes/template.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\crafted-in-sweden\wp-content\plugins\new-user-approve\admin\templates\approve.php on line 2
+
+2019-12-20T20:35:08+00:00 CRITICAL Object of class WP_User could not be converted to string in C:\xampp\htdocs\crafted-in-sweden\wp-content\themes\storefront\page-breweries.php on line 32
+
+2019-12-20T21:02:48+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in C:\xampp\htdocs\crafted-in-sweden\wp-content\plugins\my-user-list\my-user-list.php:15
+Stack trace:
+#0 C:\xampp\htdocs\crafted-in-sweden\wp-includes\shortcodes.php(325): display_user_list('', '', 'user_list')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\crafted-in-sweden\wp-includes\shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(user_l...', 'do_shortcode_ta...', '[user_list]\n\n\n\n...')
+#3 C:\xampp\htdocs\crafted-in-sweden\wp-includes\class-wp-hook.php(288): do_shortcode('[user_list]\n\n\n\n...')
+#4 C:\xampp\htdocs\crafted-in-sweden\wp-includes\plugin.php(206): WP_Hook->apply_filters('[user_list]\n\n\n\n...', Array)
+#5 C:\xampp\htdocs\crafted-in-sweden\wp-includes\post-template.php(253): apply_filters('the_content', '<!-- wp:shortco...')
+#6 C:\xampp\htdocs\crafted-in-sweden\wp-content\themes\storefront\inc\storefront-template-functions.php(347): the_content()
+#7 C:\xampp\htdocs\crafted-in-sweden\wp-includes\class- in C:\xampp\htdocs\crafted-in-sweden\wp-content\plugins\my-user-list\my-user-list.php on line 15
+
+2019-12-20T21:55:12+00:00 CRITICAL require_once(): Failed opening required 'includes/template.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\crafted-in-sweden\wp-content\plugins\new-user-approve\admin\templates\approve.php on line 2
+

@@ -10,8 +10,6 @@
  * @package storefront
  */
 
-require_once( pw_new_user_approve()->get_plugin_dir() . '/admin/templates/approve.php' );
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -29,20 +27,21 @@ get_header(); ?>
             {
                 $curuser = get_userdata($user->ID);
 
-                $current_status = pw_new_user_approve()->get_user_status( $user_id );
+                $current_status = pw_new_user_approve()->get_user_status($user->ID);
 
-                echo "<p> Utána: ".$user_status."</p>";
-
-                $author_post_url=get_author_posts_url($curuser->ID, $curuser->nicename);
-                echo "<div class='post'>";
-                    echo "<a href='.$user_link.' title='.$curuser->display_name.'>";
-                        echo "<h2>$curuser->display_name</h2>";
-                    echo '</a>';
-                    echo "<a href='.$user_link.' title='.$curuser->display_name'>";
-                        echo get_avatar($curuser->user_email, '80', $avatar);
-                    echo '</a>';
-                    echo '<p>'.$curuser->description.'</p>';
-                echo '</div>';
+                if($current_status == "approved")
+                {
+                    $author_post_url=get_author_posts_url($curuser->ID, $curuser->nicename);
+                    echo "<div class='post'>";
+                        echo "<a href='.$user_link.' title='.$curuser->display_name.'>";
+                            echo "<h2>$curuser->display_name</h2>";
+                        echo '</a>';
+                        echo "<a href='.$user_link.' title='.$curuser->display_name'>";
+                            echo get_avatar($curuser->user_email, '80', $avatar);
+                        echo '</a>';
+                        echo '<p>'.$curuser->description.'</p>';
+                    echo '</div>';
+                }
             }
         }
         
