@@ -88,7 +88,7 @@ Generally I considered these questions when making a decision:
 
 ### Chosen solutions
 
-* **[Capability Manager](https://wordpress.org/plugins/capability-manager-enhanced/)** - I use WordPress' builtin functionality for user login. Although it needs some customiyation. I chose Capability Manager to create custom user role (Brewery) and edit their capabilities.
+* **[Capability Manager](https://wordpress.org/plugins/capability-manager-enhanced/)** - I use WordPress' builtin functionality for user login. Although it needs some customization. I chose Capability Manager to create custom user role (Brewery) and edit their capabilities.
 * **[User Registration](https://wordpress.org/plugins/user-registration/)** - to create frontend registration forms. I also used this to add a checkbox for age control on user registration. There is a separate form for registration as normal user, and registration as brewery.
 * **[Age Gate](https://wordpress.org/plugins/age-gate/)** - so users have to confirm a certain age before visiting the page
 * **[New User Approve](https://wordpress.org/plugins/new-user-approve/)** - so administrators have to accept new users' registration.
