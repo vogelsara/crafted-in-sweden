@@ -79,13 +79,21 @@ When implementing a feature, it is always a decision to develop it myself, or us
 
 Generally I considered these questions when making a decision:
 
-* *Development time* - in simple features it is possible to develop something faster than find and learn a plugin. But often it's faster (so cheaper) to use a plugin, which is very important in a complex project, where there are deadlines, and the customer is waiting for the product. Every case I tried to estimate the development time with coding and with plugins.
-* *Error proneness* - a new functionality is always a new opportunity to introduce bugs. Whatever I develop it needs thorough testing. In case of a good plugin I get functionality which is already tested by many other people, and supported for the future. But in case of a bad plugin, I can install all of it's bugs too. It's important to check the userbase, the rating and the reviews of a plugin, as well as the update frequencies.
-* *Security* - similarly to the previous point, a plugin can introduce security threaths, but can be also a safer solution than one I write myself. It also needs to be taken into consideration.
-* *Performance* - very similar considerations to the previous point.
+* **Development time** - in simple features it is possible to develop something faster than find and learn a plugin. But often it's faster (so cheaper) to use a plugin, which is very important in a complex project, where there are deadlines, and the customer is waiting for the product. Every case I tried to estimate the development time with coding and with plugins.
+* **Error proneness** - a new functionality is always a new opportunity to introduce bugs. Whatever I develop it needs thorough testing. In case of a good plugin I get functionality which is already tested by many other people, and supported for the future. But in case of a bad plugin, I can install all of it's bugs too. It's important to check the userbase, the rating and the reviews of a plugin, as well as the update frequencies.
+* **Security** - similarly to the previous point, a plugin can introduce security threaths, but can be also a safer solution than one I write myself. It also needs to be taken into consideration.
+* **Performance** - very similar considerations to the previous point.
 
-### Chosen plugins
+### Chosen solutions
 
-*
+* **[Capability Manager](https://wordpress.org/plugins/capability-manager-enhanced/)** - I use WordPress' builtin functionality for user login. Although it needs some customiyation. I chose Capability Manager to create custom user role (Brewery) and edit their capabilities.
+* **[User Registration](https://wordpress.org/plugins/user-registration/)** - to create frontend registration forms. I also used this to add a checkbox for age control on user registration. There is a separate form for registration as normal user, and registration as brewery.
+* **[Age Gate](https://wordpress.org/plugins/age-gate/)** - so users have to confirm a certain age before visiting the page
+* **[New User Approve](https://wordpress.org/plugins/new-user-approve/)** - so administrators have to accept new users' registration.
+* **Own code** - the above plugin doesn't give us the opportunity to accept/decline registrations based on user role. I looked for the code part where the new users get their initial status and modified it. Now the system queries the role of the user, and sets the status to approved if it's a subsriber (normal user).
+* **[Content Control](https://wordpress.org/plugins/content-control/) and [User Menus](https://wordpress.org/plugins/user-menus/)** - these two plugins are from the same author and complement each other well. The former makes it possible to show certain content only for logged in users and only for a certain role, and the second one makes it possible to show menu items only for those users. With this we can create pages only logged in users see, for example only logged in breweries and admins can access the page for event creation.
+* **Own code** - I haven't found a plugin which suits my needs when creating a page which lists all accepted breweries. (Display a user list of a certain, custom role, only with a certain status from New User Approve plugin.) I created a page template in a child theme which queries the breweries, loops through them and displays them if they have "approved" status.
+* **[WP Event Manager](https://wordpress.org/plugins/wp-event-manager/)** - so users can create events. This plugin also has the feature that admins need to approve events before they get public. The plugin also contains an event listing page with filters and a dashboard.
+* **[WooCommerce](https://woocommerce.com/)** - the most well-known WordPress plugin for eCommerce. This is actually a set of plugins, and even the Storefront theme, which works very well with WooCommerce, but still very customizable, so it can be fit to the customer's needs. I integrate Klarna and PayPal checkout. It makes it possible for administrators and breweries to upload products. It has a builtin functionality to create affiliate products, meaning that they cannot be bought directly on the site, indtead the "Buy" button points to a 3rd party page, which, in this case is Systembolaget.
 
 ## Security analysis
