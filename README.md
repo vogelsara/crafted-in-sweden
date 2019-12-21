@@ -7,6 +7,8 @@ Crafted in Sweden is an already existing company where people can find craft bee
 
 In my project I will totally rebuild this existing page as the owners of it are not satisfied with the current version.
 
+This project is both my exam work for my studies in [Medieinstitutet](https://medieinstitutet.se/) as a student in e-commerce studies, and real project for [Ingrid:gopa](https://www.ingridgopa.se/), the webmarketing company I spend my internship at.
+
 ## Purpose
 
 There is no platform at the moment to find all of the Swedish beers, breweries and tasting events. This platform would help both the customers and the breweries to find each other.
@@ -17,7 +19,7 @@ The website must contain a log in function. There will be three kinds of account
 
 The customers will be able to rate the products and write comments below them. The breweries will be able to create events – after they create one event they have to wait for the administrators’ acceptation.
 
-The customers will be able to buy promotional gifts of Crafted in Sweden and breweries in a webshop. (Note: this is not a requirement from the real customer. This requirement is included because of the school project. Since it is forbidden by law to sell alcohol on this webshop, I need to include some other objects to buy.)
+The customers will be able to buy promotional gifts of Crafted in Sweden and breweries in a webshop. (Note: this is not a requirement from the real customer. A requirement from school is to have products on the page which can be actually bought. Since it is forbidden by law to sell alcohol on this webshop, I need to include some other objects to buy.)
 
 Purchase of beers should work through Systembolaget, so products will be linked to their respective Systembolaget pages.
 There will be also a blog page, a page where customers can search for the breweries with some filters, a page where the customers can search for the products.
@@ -52,11 +54,11 @@ There are 4 types of users of the system: Administrator, Brewery, User and Visit
  
 ## Technical comments
 
-I chose WordPress to create the page, because of the easy blog handling and webshop integration features. My earlier experience with WordPress also makes development faster and easier compared to other frameworks.
+I chose WordPress to create the page, because of the easy blog handling and webshop integration features. WordPress is also highly extendable with a wide variety of out-of-box solutions for many problems. My earlier experience with WordPress also makes development faster and easier compared to other frameworks.
 
 For version handling I will use Git with GitHub.
 
-I also use GitHub for backlog management.
+I also use GitHub for backlog management and documentation (see this page).
 
 I work in Scrum inspired ways of working. This means (among others) I will regularly synchronise with the customer, and refine the backlog.
 
