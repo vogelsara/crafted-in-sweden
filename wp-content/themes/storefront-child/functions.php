@@ -11,3 +11,8 @@ function storefront_child_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 }
+
+function custom_add_google_fonts() {
+    wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300,300i,700&display=swap&subset=latin-ext', false );
+    }
+    add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
