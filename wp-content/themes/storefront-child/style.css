@@ -11,25 +11,38 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Anton';
 }
 
-p, a{
+p, a, ul, li{
     font-family: 'Open Sans Condensed';
 }
 
 #menu-main .menu-item{
     font-size: 26px;
     font-weight: 700;
-    color: red;
-}
-
-#main-menu{
-    background-color: #000;
 }
 
 .site-search{
     display: none !important;
 }
 
+.storefront-primary-navigation{
+    background-color: #000;
+}
+
 .secondary-navigation{
     margin-right: 0px !important;
     float: right !important;
+}
+
+#site-navigation{
+    width: 100%;
+}
+
+.primary-navigation ul{
+    text-align: center;
+}
+
+.primary-navigation ul li a{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
 }
