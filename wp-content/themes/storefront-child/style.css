@@ -6,3 +6,21 @@
  Version:      1.0.0
  Text Domain:  storefrontchild
 */
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Anton';
+}
+
+p, a{
+    font-family: 'Open Sans Condensed';
+}
+
+#menu-main .menu-item{
+    font-size: 26px;
+    font-weight: 700;
+    color: red;
+}
+
+#main-menu{
+    background-color: #000;
+}
