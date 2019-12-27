@@ -24,3 +24,7 @@ p, a{
 #main-menu{
     background-color: #000;
 }
+
+.site-search{
+    display: none !important;
+}
