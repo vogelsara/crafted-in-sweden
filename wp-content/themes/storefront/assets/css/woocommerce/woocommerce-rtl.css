@@ -1456,7 +1456,7 @@ dl.variation {
   .site-header-cart {
     position: relative; }
     .site-header-cart .cart-contents {
-      padding: 1.618em 0;
+      padding: 0 0;
       display: block;
       position: relative;
       background-color: transparent;

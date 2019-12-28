@@ -30,6 +30,7 @@ p, a, ul, li{
 
 .secondary-navigation{
     margin-right: 0px !important;
+    margin-bottom: 0px;
     float: right !important;
 }
 
@@ -46,3 +47,7 @@ p, a, ul, li{
     padding-bottom: 0px;
     color: #fff;
 }
+
+.site-header-cart .cart-contents {
+    padding: 0em 0em !important;
+}   
