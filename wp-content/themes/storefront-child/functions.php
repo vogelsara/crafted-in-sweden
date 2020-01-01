@@ -8,7 +8,7 @@ function storefront_child_enqueue_styles() {
     wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/style.css',
         array( $parent_style ),
-        wp_get_theme()->get('Version')
+        rand(111,9999)
     );
 }
 

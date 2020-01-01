@@ -7,10 +7,6 @@
  Text Domain:  storefrontchild
 */
 
-h1, h2, h3{
-    color: red !important;
-}
-
 h1, h2, h3, h4, h5, h6{
     font-family: 'Anton';
 }
@@ -58,4 +54,8 @@ p, a, ul, li{
 
 .menu-submenu-container #menu-submenu{
     display: flex !important;
+}
+
+#menu-item-181{
+    margin-left: 20px;
 }
