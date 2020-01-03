@@ -7,8 +7,13 @@
  Text Domain:  storefrontchild
 */
 
+a{
+    text-decoration: none !important;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: 'Anton';
+    color: #000;
 }
 
 p, a, ul, li{
@@ -58,4 +63,22 @@ p, a, ul, li{
 
 #menu-item-181{
     margin-left: 20px;
+}
+
+.wpem-event-single-image img{
+    object-fit: cover;
+}
+
+wp-block-coblocks-posts__content{
+    position: absolute !important;
+}
+
+.button{
+    background-color: #000;
+    color: #fff;
+}
+
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link{
+    background-color: #000;
+    color: #fff;
 }
