@@ -91,6 +91,16 @@ p, a, ul, li{
      margin-bottom: 40px;
  }
 
+ #nyheter{
+     margin-top: 120px;
+ }
+
+ .wp-block-media-text>figure>img{
+     border-radius: 0px;
+ }
+
+ /* Mobile view */
+
  @media screen and (max-width: 992px) {
     .wp-block-media-text{
         display: flex;
@@ -98,5 +108,9 @@ p, a, ul, li{
     }
     .wp-block-media-text .wp-block-media-text__content{
         padding: 0px 0px;
+    }
+
+    #nyheter{
+        margin-top: 40px;
     }
   }
