@@ -83,6 +83,20 @@ wp-block-coblocks-posts__content{
     color: #fff;
 }
 
-.entry-title{
+.entry-title                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    {
     display: none;
  }
+
+ .menu ul li a{
+     color: #fff;
+ }
+
+ @media screen and (max-width: 992px) {
+    .wp-block-media-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .wp-block-media-text .wp-block-media-text__content{
+        padding: 0px 0px;
+    }
+  }
