@@ -82,3 +82,7 @@ wp-block-coblocks-posts__content{
     background-color: #000;
     color: #fff;
 }
+
+.entry-title{
+    display: none;
+ }
