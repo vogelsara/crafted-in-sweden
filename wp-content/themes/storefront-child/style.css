@@ -69,10 +69,6 @@ p, a, ul, li{
     object-fit: cover;
 }
 
-wp-block-coblocks-posts__content{
-    position: absolute !important;
-}
-
 .button{
     background-color: #000;
     color: #fff;
@@ -89,6 +85,10 @@ wp-block-coblocks-posts__content{
 
  .menu ul li a{
      color: #fff;
+ }
+
+ .wp-block-media-text{
+     margin-bottom: 40px;
  }
 
  @media screen and (max-width: 992px) {
