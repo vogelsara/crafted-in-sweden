@@ -9,6 +9,7 @@
 
 a{
     text-decoration: none !important;
+    font-weight: 700;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -16,8 +17,9 @@ h1, h2, h3, h4, h5, h6{
     color: #000;
 }
 
-p, a, ul, li{
+p, a, ul, li, time{
     font-family: 'Open Sans Condensed';
+    color: #000;
 }
 
 #menu-main .menu-item{
@@ -85,6 +87,8 @@ p, a, ul, li{
 
  .menu ul li a{
      color: #fff;
+     padding-top: 0px !important;
+     padding-bottom: 0px !important;
  }
 
  .wp-block-media-text{
@@ -97,6 +101,26 @@ p, a, ul, li{
 
  .wp-block-media-text>figure>img{
      border-radius: 0px;
+ }
+
+ .wp-block-coblocks-posts{
+     margin-bottom: 120px;
+ }
+
+ .site-header{
+     padding-top: 0px;
+ }
+
+ .cart-contents .woocommerce-Price-amount, .cart-contents .count{
+     display: none !important;
+ }
+
+ .single-product div.product{
+     overflow: visible;
+ }
+
+ .star-rating span:before{
+     color: #f5dc22;
  }
 
  /* Mobile view */
