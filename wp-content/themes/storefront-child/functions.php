@@ -17,3 +17,10 @@ function custom_add_google_fonts() {
     wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300,300i,700&display=swap&subset=latin-ext', false );
     }
     
+add_action('init', 'function_to_add_author_woocommerce', 999 );
+
+function function_to_add_author_woocommerce() {
+    add_post_type_support( 'product', 'author' );
+}
+
+?>
