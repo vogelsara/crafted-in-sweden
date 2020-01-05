@@ -85,12 +85,9 @@ p, a, ul, li, time{
     object-fit: cover;
 }
 
-.button, .um-button{
+.button{
     background-color: #000 !important;
     color: #fff !important;
-    font-family: 'Open Sans Condensed' !important;
-    font-weight: 700 !important;
-    border-radius: 0px;
 }
 
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link{
