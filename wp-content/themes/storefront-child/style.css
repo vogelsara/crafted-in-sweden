@@ -27,6 +27,11 @@ p, a, ul, li, time{
     font-weight: 700;
 }
 
+
+.primary-navigation ul li a{
+    padding: 10px 20px 10px 20px !important;
+}
+
 .site-search{
     display: none !important;
 }
@@ -49,6 +54,10 @@ p, a, ul, li, time{
     text-align: center;
 }
 
+.header-widget-region .widget{
+    padding: 10px 0 0 0;
+}
+
 .primary-navigation ul li a{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -61,6 +70,7 @@ p, a, ul, li, time{
 
 .menu-submenu-container #menu-submenu{
     display: flex !important;
+    justify-content: center;
 }
 
 #menu-item-181{
@@ -109,6 +119,7 @@ p, a, ul, li, time{
 
  .site-header{
      padding-top: 0px;
+     margin-bottom: 0px !important;
  }
 
  .cart-contents .woocommerce-Price-amount, .cart-contents .count{
@@ -123,6 +134,39 @@ p, a, ul, li, time{
      color: #f5dc22;
  }
 
+ .pt-full{
+     padding-top: 60%;
+ }
+
+ .page-id-176 article .entry-content{
+    display: flex !important;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-id-176 article .entry-content .wp-block-button a{
+   margin: 4em;
+   width: 14em;
+   height: 8em;
+   background-color: #fff;
+   color: #000;
+   border: 2px solid #000 !important;
+}
+
+article .entry-content .wp-block-button a img{
+    margin: 0 auto;
+    width: 70px !important;
+    height: auto !important;
+}
+
+footer{
+    padding-bottom: 0px !important;
+}
+
+footer .site-info{
+    display: none;
+}
+
  /* Mobile view */
 
  @media screen and (max-width: 992px) {
@@ -136,5 +180,14 @@ p, a, ul, li, time{
 
     #nyheter{
         margin-top: 40px;
+    }
+    
+    .page-id-176 article .entry-content{
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    article .entry-content .wp-block-button a{
+        margin: 1em;
     }
   }
