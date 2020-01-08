@@ -261,28 +261,93 @@
 				</div>
 
 			<?php }
-		}
+		} ?>
 
-		$author_id = um_profile_id();
+		<!-- Custom part BEGIN -->
+		<div class="wc-block-grid wp-block-handpicked-products wc-block-handpicked-products has-3-columns">
 
-		$args = array(
-			'author'     =>  $author_id,
-			'post_type'  => 'product'
-		);
-		
-		$author_posts = get_posts( $args );
-		
-		if ( $author_posts ) {
-			foreach ( $author_posts as $post ) : 
-				setup_postdata( $post ); ?>
-				<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-			<?php
-			endforeach;
-			wp_reset_postdata();
-		}
+			<ul class="wc-block-grid__products">
 
-		//echo do_shortcode('[products columns="4"]');
+			<?php global $post;
 
+			$author_id = um_profile_id();
+
+			$args = array(
+				'author'     =>  $author_id,
+				'post_type'  => 'product'
+			);
+
+			$author_posts = get_posts( $args );
+
+			if ( $author_posts ) {
+				foreach ( $author_posts as $post ) : 
+					setup_postdata( $post ); ?>
+
+					<li class="wc-block-grid__product">
+						<a href="<?php the_permalink(); ?>" class="wc-block-grid__product-link">
+							<div class="wc-block-grid__product-image">
+								<img width="324" height="324" 
+								src="<?php echo get_the_post_thumbnail_url($loop->post->ID); ?>" 
+								class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" 
+								alt=""
+								sizes="(max-width: 324px) 100vw, 324px" />
+							</div>
+							<div class="wc-block-grid__product-title"><?php the_title(); ?></div>
+						</a>
+
+						<?php
+						$product = wc_get_product( $post->ID );
+						?>
+
+						<?php
+						$price = $product->get_price();
+						if ($price != '') :
+							echo '<div class="wc-block-grid__product-price price">';
+							echo '  <span class="woocommerce-Price-amount amount">';
+							echo '    <span class="woocommerce-Price-currencySymbol">';
+							echo '		&#107;&#114;';
+							echo '	  </span>';
+							echo $price;
+							echo '  </span>';
+							echo '</div>';
+						 endif; ?>
+
+						<div class="wc-block-grid__product-rating">
+
+							<?php if ($average = $product->get_average_rating()) : ?>
+							<?php echo '<div class="star-rating" title="'.sprintf(__( 'Rated %s out of 5', 'woocommerce' ), $average).'"><span style="width:'.( ( $average / 5 ) * 100 ) . '%"><strong itemprop="ratingValue" class="rating">'.$average.'</strong> '.__( 'out of 5', 'woocommerce' ).'</span></div>'; ?>
+							<?php endif; ?>
+
+						</div>
+
+						<?php
+                            echo apply_filters(
+                                'woocommerce_loop_add_to_cart_link',
+                                sprintf(
+                                    '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="button %s product_type_%s">%s</a>',
+                                    esc_url( $product->add_to_cart_url() ),
+                                    esc_attr( $product->get_id() ),
+                                    esc_attr( $product->get_sku() ),
+                                    $product->is_purchasable() ? 'add_to_cart_button' : '',
+                                    esc_attr( $product->product_type ),
+                                    esc_html( $product->add_to_cart_text() )
+                                ),
+                                $product
+                            );?>
+					</li>
+					
+				<?php
+				endforeach;
+				wp_reset_postdata();
+			}
+			?>
+
+			</ul>
+			
+		</div>
+		<!-- Custom part END -->
+
+		<?php
 		do_action( 'um_profile_footer', $args ); ?>
 	</div>
 </div>
