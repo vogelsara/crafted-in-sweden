@@ -25,7 +25,7 @@ function function_to_add_author_woocommerce() {
 
 add_action( 'woocommerce_single_product_summary', 'woocommerce_product_author', 6);
 function woocommerce_product_author() {
-    the_author();
+    the_author_posts_link();
 }
 
 ?>

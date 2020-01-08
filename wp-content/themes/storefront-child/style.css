@@ -167,6 +167,12 @@ footer .site-info{
     display: none;
 }
 
+ /* Brewery's page */
+
+ .page-id-143 .wp-block-handpicked-products li{
+    padding: 0;
+ }
+
  /* Mobile view */
 
  @media screen and (max-width: 992px) {
