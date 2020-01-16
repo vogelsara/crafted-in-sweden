@@ -17,8 +17,16 @@ h1, h2, h3, h4, h5, h6{
     color: #000;
 }
 
-p, a, ul, li, time{
-    font-family: 'Open Sans Condensed';
+p, ul, li, time, label{
+    font-family: 'Open Sans Condensed' !important;
+    color: #000 !important;
+}
+
+.primary-navigation a{
+    color: #fff !important;
+}
+
+i{
     color: #000;
 }
 
@@ -88,7 +96,7 @@ p, a, ul, li, time{
 
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link{
     background-color: #000;
-    color: #fff;
+    color: #fff !important;
 }
 
 .entry-title                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    {
@@ -131,7 +139,11 @@ p, a, ul, li, time{
  }
 
  .star-rating span:before{
-     color: #f5dc22;
+     color: #000;
+ }
+
+ .single-product div.product .woocommerce-product-rating{
+     margin-top: 0px;
  }
 
  .pt-full{
@@ -173,7 +185,30 @@ footer .site-info{
     padding: 0;
  }
 
+ .um-profile-nav{
+     display: none;
+ }
+
  /* Mobile view */
+
+ 
+ .menu-toggle{
+    color: #fff !important;
+    background-color: #000 !important;
+    border: 0px !important;
+}
+
+.menu-toggle:before{
+    background-color: #fff !important;
+}
+
+.menu-toggle span:before{
+    background-color: #fff !important;
+}
+
+.menu-toggle:after{
+    background-color: #fff !important;
+}
 
  @media screen and (max-width: 992px) {
     .wp-block-media-text{
@@ -196,4 +231,5 @@ footer .site-info{
     article .entry-content .wp-block-button a{
         margin: 1em;
     }
+
   }
