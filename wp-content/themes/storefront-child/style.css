@@ -210,6 +210,11 @@ footer .site-info{
     background-color: #fff !important;
 }
 
+.hentry .wp-post-image{
+    max-height: 80px;
+    width: auto;
+}
+
  @media screen and (max-width: 992px) {
     .wp-block-media-text{
         display: flex;
@@ -230,6 +235,11 @@ footer .site-info{
 
     article .entry-content .wp-block-button a{
         margin: 1em;
+    }
+
+    .wc-block-grid.has-3-columns .wc-block-grid__product{
+        flex: none;
+        max-width: 100%;
     }
 
   }
