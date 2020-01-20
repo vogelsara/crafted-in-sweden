@@ -179,6 +179,23 @@ footer .site-info{
     display: none;
 }
 
+ /* Blog page */
+
+ /*.blog p{
+     display: none;
+ }
+
+ .blog img{
+     width: 300px;
+     height: 280px;
+     object-fit: cover;
+ }
+
+ .blog article aside{
+     display: none;
+ }*/
+
+
  /* Brewery's page */
 
  .page-id-143 .wp-block-handpicked-products li{
@@ -210,9 +227,13 @@ footer .site-info{
     background-color: #fff !important;
 }
 
-.hentry .wp-post-image{
+.single-event_listing .hentry .wp-post-image{
     max-height: 80px;
     width: auto;
+}
+
+.wpem-event-listings-header .wpem-event-layout-action-wrapper .wpem-event-layout-action {
+    display: none;
 }
 
  @media screen and (max-width: 992px) {
@@ -240,6 +261,25 @@ footer .site-info{
     .wc-block-grid.has-3-columns .wc-block-grid__product{
         flex: none;
         max-width: 100%;
+    }
+
+    .um-left{
+        float: none !important;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .home .wc-block-grid__products li{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .home .wc-block-grid__products li .price{
+        margin: 0;
+    }
+
+    .main-navigation ul li a{
+        color: #fff;
     }
 
   }
