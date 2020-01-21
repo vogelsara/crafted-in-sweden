@@ -236,6 +236,22 @@ footer .site-info{
     display: none;
 }
 
+.single-product .entry-summary h1{
+    display: block !important;
+}
+
+/* Main colors */
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid #eddb66; }
+
+.single-product .entry-summary a{
+    color: #000;
+}
+
  @media screen and (max-width: 992px) {
     .wp-block-media-text{
         display: flex;
