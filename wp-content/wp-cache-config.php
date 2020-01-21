@@ -5,7 +5,7 @@ WP-Cache Config Sample File
 See wp-cache.php for author details.
 */
 
-$wp_cache_home_path = '/crafted-in-sweden/';
+$wp_cache_home_path = '/';
 $wp_cache_slash_check = 1;
 $cache_page_secret = 'c11ce112179bf3cbab2522e773c780e8';
 $cache_time_interval = 600;

@@ -1,0 +1,30 @@
+2020-01-08T14:22:44+00:00 CRITICAL syntax error, unexpected end of file in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 314
+
+2020-01-08T14:26:50+00:00 CRITICAL syntax error, unexpected end of file in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 307
+
+2020-01-08T14:27:14+00:00 CRITICAL syntax error, unexpected end of file in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 308
+
+2020-01-08T14:27:56+00:00 CRITICAL syntax error, unexpected end of file in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 308
+
+2020-01-08T14:33:03+00:00 CRITICAL Call to undefined function the_thumbnail() in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 288
+
+2020-01-08T14:33:11+00:00 CRITICAL Call to undefined function the_thumbnail() in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 288
+
+2020-01-08T14:47:06+00:00 CRITICAL Call to undefined function the_thumbnail() in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 288
+
+2020-01-08T15:07:24+00:00 CRITICAL Call to a member function get_price() on boolean in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 307
+
+2020-01-08T15:08:24+00:00 CRITICAL Call to a member function get_price() on boolean in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 307
+
+2020-01-08T15:09:19+00:00 CRITICAL Call to a member function get_price() on boolean in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 308
+
+2020-01-08T15:17:53+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 329
+
+2020-01-08T15:18:28+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 329
+
+2020-01-08T15:20:03+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 329
+
+2020-01-08T15:20:41+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 329
+
+2020-01-08T15:22:37+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /var/www/customers/vh-29377/web/home/www.srvgl.nhely.hu/wp-content/themes/storefront-child/ultimate-member/templates/profile.php on line 331
+
