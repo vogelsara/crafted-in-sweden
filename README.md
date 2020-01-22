@@ -1,7 +1,50 @@
 # Crafted in Sweden
 Meeting place for craft beer lovers and breweries.
 
-TODO Executive summary
+## Executive Summary
+
+### Purpose and goal
+
+This project is both a shool project for [Medieinstitutet](https://medieinstitutet.se/)'s e-commerce studies and a real project for [Ingrid:gopa](https://www.ingridgopa.se/) webmarketing agency.
+
+The project's files are stored in GitHub, under https://github.com/vogelsara/crafted-in-sweden, and the page is stored under the development domain: http://www.srvgl.nhely.hu/.
+
+Purpose of the project is to have a place where both breweries and craft beer lovers can register and get to know each other. Breweries, customers and admins have different accout roles, and breweries and customers can register themselves, though brewery registration must be approved by an administrator. Breweries can upload their own products, which leads to Systembolaget page. Breweries can also edit their profile adding description, pictures and contact info as well as create events which will be seen on a separate subpage by customers. Event creation must also be approved by admin. Non-alcoholic products can be also uploaded by brewery or admin, and can be directly bought via this site. Page also contains a blog page where posts written by admins are listed.
+
+### Technical comments
+
+I chose WordPress to implement the solution because of extendability, wide range of plugins and my earlier experience.
+
+For version handlin I use Git with GitHub.
+
+I use a Scrum-like ways of working.
+
+### Work log
+
+For every feature I considered using plugins or my own development. Every case I considered the development time, error proneness, security, performance and possible future changes.
+
+I have chosen [Age Gate](https://wordpress.org/plugins/age-gate/) so users have to confirm a certain age before visiting the page. [WP Event Manager](https://wordpress.org/plugins/wp-event-manager/) for event handling. [WooCommerce](https://woocommerce.com/) for e-commerce features. [Ultimate Member](https://hu.wordpress.org/plugins/ultimate-member/) for user registration, profile pages and content restriction. I used my own implementation to assign products to breweries, and list breweries' beers on their profile pages. I have chosen the Storefront theme because of WooComerce integration, and created child theme for cstomization. I also implemented my own blog site, because I was unsatisfied with the default one. I also highly customized the appearance of the site mostly via CSS, but also with php template edits.
+
+During the work I have solved a lot of emergent problems, which cannot be seen from the end result. I tried different versions of the page, intalled 5 different plugins to handle user registration, role customization, user approve and content restriction, and complemented them with my own code before finding Ultimate Member. All ot this investigation, and removing them and reconfigure all of these was also part of the work.
+
+I also had thechnical problems with the provider when moving site to live server, so I had to find another one and setup everything. I also experimented with Visual Studio's automatic server synchronization through FTP.
+
+I needed to do a lot of customization related to mobile view. One of the changes caused the whole site to collaps, so I needed to troubleshoot, revert the faulty commit and redo the work the correct way.
+
+I also did a lot of little changes, which are outside the scope of this section.
+
+
+### System requirements and installation
+
+Link to WordPress' system requirements: https://wordpress.org/about/requirements/
+
+At the time this page was created, the test system was running PHP version 7.2 and MySQL 5.6.
+
+There are no installation instructions, page is installed and se up, and can be moved from one server to another via standard WordPress move procedure.
+
+### Security analysis
+
+There are a lot of other steps an administrator can do to improve security, and [this blogpost](https://www.wpbeginner.com/wordpress-security/) summarizes them very well.
 
 ## Description
 
