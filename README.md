@@ -29,7 +29,7 @@ During the work I have solved a lot of emergent problems, which cannot be seen f
 
 I tried different versions of the page, intalled 5 different plugins to handle user registration, role customization, user approve and content restriction, and complemented them with my own code before finding Ultimate Member. All ot this investigation, and removing them and reconfigure all again with UM was also part of the work.
 
-I also had thechnical problems with the provider when moving site to live server frm localhost, so I had to find another provider and setup everything. I also experimented with Visual Studio's automatic server synchronization through FTP.
+I also had thechnical problems with the provider when moving site to live server from localhost, so I had to find another provider and setup everything. I also experimented with Visual Studio's automatic server synchronization through FTP.
 
 I needed to do a lot of customization related to mobile view. One of the changes caused the whole site to collapse, so I needed to troubleshoot, revert the faulty commit and redo the work the correct way.
 
@@ -84,7 +84,7 @@ Work breakdown and progress can be found under [Projects page of this GitHub pro
 
 There are 4 types of users of the system: Administrator, Brewery, User and Visitor (not registered). The following user stories apply to them:
 
-* As an end user who is at least 20 years old I can register to the system, so I can find breweries and their products
+* As an end user who is at least 20 years old I can view and register to the system, so I can find breweries and their products
 * As an administrator I can upload non-alcoholic products, so users can buy them directly on the page
 * As a visitor I can browse and filter these products, so I can easily find what I need
 * As a registered user I can buy the chosen products and directly pay for them
@@ -108,7 +108,7 @@ I chose WordPress to create the page, because of the easy blog handling and webs
 
 For version handling I will use Git with GitHub.
 
-I also use GitHub for backlog management and documentation (see this page).
+I also use GitHub for backlog management and documentation (see [linked GitHub project](https://github.com/vogelsara/crafted-in-sweden)).
 
 I work in Scrum inspired ways of working. This means (among others) I will regularly synchronise with the customer, and refine the backlog.
 
@@ -135,7 +135,7 @@ Generally I considered these questions when making a decision:
 * **Error proneness** - a new functionality is always a new opportunity to introduce bugs. Whatever I develop it needs thorough testing. In case of a good plugin I get functionality which is already tested by many other people, and supported for the future. But in case of a bad plugin, I can install all of it's bugs too. It's important to check the userbase, the rating and the reviews of a plugin, as well as the update frequencies.
 * **Security** - similarly to the previous point, a plugin can introduce security threaths, but can be also a safer solution than one I write myself. It also needs to be taken into consideration.
 * **Performance** - very similar considerations to the previous point.
-* **Future changes** - in case of using an external plugin, I need to be prepared for future changes. This is also true for the theme itself. In order to avoid complications, any customization needs to be done carefully. Theme customization is always done in child theme, and if I customize a plugin's behaviour I either only extend it via actions/filters, or override the template file in the child theme so it won't get lost when I update the plugin. Plugin behaviour can still change when the plugin changes, but plugins are only updated manyally, so when I or another admin update a plugin in the future, I need to read the changelog carefully and test the whole page toroughly.
+* **Future changes** - in case of using an external plugin, I need to be prepared for future changes. This is also true for the theme itself. In order to avoid complications, any customization needs to be done carefully. Theme customization is always done in child theme, and if I customize a plugin's behaviour I either only extend it via actions/filters, or override the template file in the child theme so it won't get lost when I update the plugin. Plugin behaviour can still change when the plugin changes, but plugins are only updated manually, so when I or another admin update a plugin in the future, I need to read the changelog carefully and test the whole page toroughly.
 
 ### Chosen solutions
 
@@ -143,7 +143,7 @@ Here is a short summary of the main solutions chosen in the end
 
 * **[Age Gate](https://wordpress.org/plugins/age-gate/)** - so users have to confirm a certain age before visiting the page
 * **[WP Event Manager](https://wordpress.org/plugins/wp-event-manager/)** - so users can create events. This plugin also has the feature that admins need to approve events before they get public. The plugin also contains an event listing page with filters and a dashboard.
-* **[WooCommerce](https://woocommerce.com/)** - the most well-known WordPress plugin for eCommerce. This is actually a set of plugins, and even the Storefront theme, which works very well with WooCommerce, but still very customizable, so it can be fit to the customer's needs. I integrate Klarna and PayPal checkout. It makes it possible for administrators and breweries to upload products. It has a builtin functionality to create affiliate products, meaning that they cannot be bought directly on the site, indtead the "Buy" button points to a 3rd party page, which, in this case is Systembolaget.
+* **[WooCommerce](https://woocommerce.com/)** - the most well-known WordPress plugin for eCommerce. This is actually a set of plugins, and even the Storefront theme, which works very well with WooCommerce, but still very customizable, so it can be fit to the customer's needs. I integrate PayPal checkout. (Not Klarna in the test system for simplicity.) It makes it possible for administrators and breweries to upload products. It has a builtin functionality to create affiliate products, meaning that they cannot be bought directly on the site, indtead the "Buy" button points to a 3rd party page, which, in this case is Systembolaget.
 * **[Ultimate Member](https://hu.wordpress.org/plugins/ultimate-member/)** - the most used user profile management plugin, which is well tested and secure. It gives us the possibility to fulfill a lot of our requirements. With Ultimate Member I created the new user role "Bryggare" (brewery), who is similar to an author, except they can create WooCommerce products. Ultimate Member also enables us to create frontend registration forms and editable profile pages for users. Both customers and breweries can easily register, without using the admin interface. UM provides an easy way to create a page for brewery list which is filterable. UM also gives us the opportunity to show specific menu items and content only to specific users, which enables us to let only breweries to create events. UM furthermore has login form, and password reset functionality as well.
 * **Connect products to breweries - own coding** - there was a requirement that some products (beers) can be assigned to users, which is not allowed by WooCommerce by default. Also Ultimate Member doesn't have the feature to list a set of WooComerce products on the profile page. So I did the following steps:
     * **Enabled WooCommerce product authors** - WooCommerce products are posts afterall, so they have authors, but WooCommerce disabled it's use by default. With a few lines of code in functions.php I could enable it back, so administrators can choose author from a dropdown in the admin interface.
@@ -249,7 +249,7 @@ WordPress is the market leader content management system, so it is a very common
 
 One basic advice is to always update WordPress itself and it's plugins as the new versions often contain security updates, and to not install unnecessary and not trustable third party plugins.
 
-Another basic advices is to always use HTTPS, chose reliable hosting provider, do frequent backups and use string passwords.
+Another basic advices is to always use HTTPS, chose reliable hosting provider, do frequent backups and use strong passwords.
 
 We can also use plugins, which enable 2 factor authentication, and report security threats.
 
