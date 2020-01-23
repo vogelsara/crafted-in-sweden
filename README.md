@@ -231,6 +231,9 @@ Here I write a separate summary of the main tasks, since not every step can be r
 * Configure long and html based desciptions to users instead of only 40 words
 * Create new blog page php template
 * Write report
+* Fix logo in mobile view
+* Fix up Age Gate issue and design it
+* Final test and fix lot of minor and medium known bugs.
 		
 ## System requirements and installation
 
