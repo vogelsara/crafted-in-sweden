@@ -52,6 +52,7 @@ i{
     margin-right: 0px !important;
     margin-bottom: 0px;
     float: right !important;
+    padding-right: 20px;
 }
 
 #site-navigation{
@@ -74,6 +75,10 @@ i{
 
 .site-header-cart .cart-contents {
     padding: 0em 0em !important;
+}
+
+.site-header-cart{
+    top: 23px;
 }
 
 .menu-submenu-container #menu-submenu{
