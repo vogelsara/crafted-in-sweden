@@ -184,22 +184,10 @@ footer .site-info{
     display: none;
 }
 
- /* Blog page */
-
- /*.blog p{
-     display: none;
- }
-
- .blog img{
-     width: 300px;
-     height: 280px;
-     object-fit: cover;
- }
-
- .blog article aside{
-     display: none;
- }*/
-
+.age-restriction p{
+    color: #fff !important;
+    font-size: 26px;
+}
 
  /* Brewery's page */
 
