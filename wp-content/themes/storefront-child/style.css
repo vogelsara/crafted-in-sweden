@@ -286,6 +286,43 @@ footer .site-info{
     margin: 0 auto;
   }
 
+  
+/* Main colors */
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid #eddb66; }
+
+.single-product .entry-summary a{
+    color: #000;
+}
+
+.post-edit-link{
+    color: #000 !important;
+}
+
+.nav-previous a, .nav-next a{
+    color: #000;
+}
+
+.logged-in-as a{
+    color: #000;
+}
+
+.page-id-17 .wp-block-coblocks-posts a{
+    color: #000;
+}
+
+.um-member-directory-sorting-a a{
+    color: #000;
+}
+
+.um-member-directory-filters-a a{
+    color: #000;
+}
+
  /* Mobile view */
 
  
@@ -320,19 +357,7 @@ footer .site-info{
     display: block !important;
 }
 
-/* Main colors */
-
-a:focus,
-input:focus,
-textarea:focus,
-button:focus {
-  outline: 2px solid #eddb66; }
-
-.single-product .entry-summary a{
-    color: #000;
-}
-
- @media screen and (max-width: 992px) {
+ @media screen and (max-width: 690px) {
     .wp-block-media-text{
         display: flex;
         flex-direction: column;
@@ -380,6 +405,17 @@ button:focus {
 
     .blog .post{
         width: 100%;
+    }
+
+    .site-branding a {
+        background: url("http://www.srvgl.nhely.hu/wp-content/uploads/2020/01/logo-01.svg") !important;
+        height: 70px;
+        background-repeat: no-repeat !important;
+        background-size: cover; 
+    }
+
+    .site-branding a img{
+        display: none;
     }
 
   }
