@@ -28,4 +28,9 @@ function woocommerce_product_author() {
     the_author_posts_link();
 }
 
+add_action( 'after_setup_theme', 'child_theme_slug_setup' );
+function child_theme_slug_setup() {
+    load_child_theme_textdomain( 'parent-theme-slug', get_stylesheet_directory() . '/languages' );
+}
+
 ?>
