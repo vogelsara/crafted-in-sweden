@@ -26,7 +26,7 @@
                     <p><?php the_excerpt(); ?></p>
                 </div>
                 <div class="post-button">
-                    <a href="<?php the_permalink() ?>" class="read-button">read</a>
+                    <a href="<?php the_permalink() ?>" class="read-button">läsa</a>
                 </div>
             </div>
         </div>
