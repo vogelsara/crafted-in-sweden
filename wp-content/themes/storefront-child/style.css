@@ -337,6 +337,14 @@ button:focus {
     color: #000;
 }
 
+.single-post .content-area{
+    width: fit-content;
+}
+
+.single-post #secondary{
+    display: none;
+}
+
  /* Mobile view */
 
  
