@@ -301,6 +301,14 @@ footer .site-info{
   }
 
   
+.single-post .content-area{
+    width: fit-content;
+}
+
+.single-post #secondary{
+    display: none;
+}
+  
 /* Main colors */
 
 a:focus,
@@ -337,13 +345,10 @@ button:focus {
     color: #000;
 }
 
-.single-post .content-area{
-    width: fit-content;
+.single-post p a{
+    color: #000;
 }
 
-.single-post #secondary{
-    display: none;
-}
 
  /* Mobile view */
 
