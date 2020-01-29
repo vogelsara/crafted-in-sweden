@@ -13,7 +13,7 @@
                 </div>
                 <div class="post-details">
                     <div class="post-date">
-                        <i class="far fa-clock"></i> <?php the_time('Y, M, D') ?>
+                        <i class="fas fa-calendar"></i> <?php the_time('Y, M, D') ?>
                     </div>
                     <div class="post-author">
                         <i class="fas fa-feather-alt"></i> <?php the_author() ?>
